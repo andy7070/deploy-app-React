@@ -1,0 +1,184 @@
+@charset 'UTF-8';
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: #121212;
+}
+
+#cabecario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#cabecario nav{
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+#cabecario nav ul{
+  list-style: none;
+  display: flex;
+  gap: 8px;
+ 
+  
+}
+
+#cabecario nav ul li{
+  margin-left: 15px;
+}
+
+#cabecario nav ul li a{
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  transition: .3s;
+}
+
+#cabecario nav ul li a:hover{
+  color: greenyellow;
+  opacity: .3;
+}
+
+#containerSeach{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 30px;
+  border: 2px solid white;
+  background-color: #ccc;
+  border-radius: 20px;
+}
+
+#containerSeach input{
+  border-radius: 20px;
+  padding: 10px 10px;
+  border: none;
+  background-color: transparent;
+  
+}
+
+#containerSeach input:focus-visible{
+  outline: none;
+}
+
+
+
+#area1 h2{
+  text-align: center;
+  margin-top: 100px;
+  color: #ccc;
+}
+
+
+
+.wrarp{
+  position: relative;
+  margin-top: 50px;
+  
+
+
+  
+}
+
+.containerImg {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  overflow: hidden; /* Garante que a descrição não ultrapasse os limites da imagem */
+  margin: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#img {
+  width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
+  border-radius: 15px;
+  height: 100%; /* Mantém a proporção da imagem */
+  cursor: pointer;
+  transition: .5;
+ 
+}
+
+#img:hover{
+  opacity: .5;
+}
+
+.descricao {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 200px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #000, transparent); /* Adapte a opacidade e a cor de fundo conforme necessário */
+  color: #fff; /* Cor do texto */
+  padding: 10px 0; /* Espaçamento interno */
+  
+}
+
+.descricao p{
+  font-size: 17px;
+}
+
+
+.descricao3, .descricao2 {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 200px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #C0C0C0, transparent);
+  color: greenyellow;
+  padding: 10px 10px; /* Espaçamento interno */
+  
+}
+
+.descricao2, .descricao3 p{
+  font-size: 20px;
+}
+
+.descricao2{
+  right: 0;
+  text-align: right;
+}
+
+.descricao3{
+  text-align: left;
+  left: 0;
+}
+
+
+
+
+.descricao4{
+  position: relative;
+  width: 200px;
+}
+
+.descricao4 p{
+  color: greenyellow;
+  text-align: center;
+}
+
+.filmesChegoAgora{
+ display: flex;
+ justify-content: center;
+ flex-flow: wrap;
+}
+
+
+
+
+
+
+
+
